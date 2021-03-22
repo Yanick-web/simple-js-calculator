@@ -1,0 +1,76 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+#calculator{
+    width: 50vw;
+    height: 90vh;
+    border: none;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 0.2rem;
+
+}
+#text{
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    letter-spacing: 1ch;
+    color: white;
+    outline: none;
+    background-color: black;
+    border: none;
+    font-size: 32px;
+}
+#keys{
+    height: 80%;
+    display: grid;
+    grid-template-areas: 'oneone onetwo onethree onefour'
+                        'twoone twotwo twothree twofour'
+                        'threeone threetwo threethree threePL'
+                        'fourone fourtwo fourthree threePL'
+                        'fiveone fivetwo fourEQ fourEQ ';
+    border: 1px solid black;
+}
+
+.display .display-screen{
+width: 100%;
+height: 60px;
+border: none;
+background-color: black;
+color: white;
+padding: 1rem;
+font-size: 32px;
+}
+button{
+    border-radius: 1rem;
+    border: none;
+    margin: .2rem;
+    outline: none;
+    cursor: pointer;
+}
+#plus,#c, #ac, #minus, #times, #divide, #equals {
+    background-color: orange;
+}
+#plus:hover, #times:hover, #minus:hover, #divide:hover, #c:hover, #ac:hover, 
+#equals:hover{
+    background-color: #FF7417;
+}
+button:hover{
+    background-color: darkgray;
+}
+
+h1{
+    color: white;
+}
+
